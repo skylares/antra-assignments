@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML assignment</title>
+  </head>
+  <body>
+
+    <div class="main-container">
+    <h1>Sign Up</h1>
+    <form action="index.html" method="get">
+      <div class="input-container">
+        <input type="text" class="text-entry half" placeholder="First Name" id="firstName" required>
+        <input type="text" class="text-entry half" placeholder="Last Name" id="lastName" required>
+      </div>
+      
+      <input type="text" class="text-entry whole" placeholder="Mobile No." id="mobileNumber" required>
+      <input type="email" class="text-entry whole" placeholder="Email Address" id="email" requrired>
+
+      <div class="input-container">
+        <input type="password" class="text-entry half" placeholder="Password" id="password" required>
+        <input type="password" class="text-entry half" placeholder="Confirm Password" id="confirmPassword" required>
+      </div>
+
+      <div class="terms-container">
+        <input type="checkbox" class="checkbox -terms" id="checkbox">
+        <label for="checkbox" class="checkboxText">I Agree</label>
+        <p class="termsConditionsText">By clicking <span class="registerText">Register</span>, you agree to the <span class="termsText">Terms and Conditions</span> set out by this site, including our Cookie Use.</p>
+      </div>
+
+      <div class="button-container">
+        <button class="button -register">Register</button>
+        <button class="button -signIn">Sign In</button>
+      </div>
+    </form>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #333333;
+}
+
+html, body, h1, input, form, button, div, p {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-entry {
+  height: 3rem;
+  margin: 10px 0;
+  padding-left: 15px;
+  border: 2px solid #D7D7D7;
+  border-radius: 5px;
+  font-size: 1.125rem;
+}
+
+.text-entry.half {
+  flex-basis: 49%;
+}
+
+.text-entry:hover {
+  border: 2px solid #9ACAF1;
+}
+
+.text-entry:focus {
+  outline: none;
+  border: 2px solid #9ACAF1;
+  box-shadow: 0px 0px 7px 2px rgba(154,202,241,0.7);
+}
+
+.terms-container {
+  display: flex; 
+  align-items: center;
+  /* justify-content: center; */
+  margin: 10px 0;
+  height: 38px;
+}
+
+.checkboxText {
+  margin-right: 100px;
+  margin-left: 5px;
+  font-weight: bold;
+  min-width: 55px;
+
+}
+
+.termsConditionsText {
+  font-weight: 300;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.registerText {
+  background-color: #428BCA;
+  color: #FEFEFE;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.termsText {
+  font-family: 'Times New Roman', Times, serif;
+  color: #438BCA;
+  line-height: 1.25rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+} 
+
+.button {
+  flex-basis: 47%;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  color: #FEFEFE;
+  font-size: 1.125rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button.-register {
+  background-color: #428BCA;
+}
+
+.button.-signIn {
+  background-color: #5CB85C;
+}
+
+
+@media (max-width: 600px) {
+
+  .input-container {
+    flex-direction: column;
+    height: 9rem;
+  }
+
+  .terms-container {
+    height: fit-content;
+  }
+
+  .checkboxText {
+    margin-right: 30px;
+  }
+}
